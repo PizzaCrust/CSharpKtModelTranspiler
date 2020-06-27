@@ -13,8 +13,6 @@
 /build
 /buildSrc/.gradle
 /buildSrc/build
-/gradle
 /tmp
 /gradle.properties
-/csharp-1.0-SNAPSHOT.jar
 /Models
