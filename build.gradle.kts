@@ -18,6 +18,11 @@ dependencies {
     implementation("com.github.cretz.kastree:kastree-ast-jvm:0.4.0")
 }
 
+
+tasks.named("build") {
+    dependsOn("shadowJar")
+}
+
 tasks {
     compileKotlin {
         kotlinOptions.jvmTarget = "1.8"
