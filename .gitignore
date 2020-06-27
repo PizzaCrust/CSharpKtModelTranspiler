@@ -1,0 +1,20 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Maven (Public, sufficent) template
+# Created by .ignore support plugin (hsz.mobi)
+### Maven (Public, with public gitignore) template
+# Created by .ignore support plugin (hsz.mobi)
+### Maven (Public) template
+# Created by .ignore support plugin (hsz.mobi)
+### Maven template
+# Created by .ignore support plugin (hsz.mobi)
+### Default template
+/.gradle
+/.idea
+/build
+/buildSrc/.gradle
+/buildSrc/build
+/gradle
+/tmp
+/gradle.properties
+/csharp-1.0-SNAPSHOT.jar
+/Models
