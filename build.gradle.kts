@@ -15,7 +15,6 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.antlr:antlr4-runtime:4.8-1")
     implementation(files("csharp-1.0-SNAPSHOT.jar"))
-    implementation("com.github.cretz.kastree:kastree-ast-jvm:0.4.0")
 }
 
 
