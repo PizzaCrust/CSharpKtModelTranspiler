@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "1.3.72"
-    `maven-publish`
+    maven
+    id("com.github.johnrengelman.shadow") version "5.2.0"
 }
 
 group = "me.tgsc"
@@ -13,7 +14,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.antlr:antlr4-runtime:4.8-1")
-    compileOnly(files("csharp-1.0-SNAPSHOT.jar"))
+    implementation(files("csharp-1.0-SNAPSHOT.jar"))
 }
 
 tasks {
