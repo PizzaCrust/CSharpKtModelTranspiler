@@ -17,6 +17,10 @@ dependencies {
     implementation(files("csharp-1.0-SNAPSHOT.jar"))
 }
 
+tasks.named("build") {
+    dependsOn("shadowJar")
+}
+
 tasks {
     compileKotlin {
         kotlinOptions.jvmTarget = "1.8"
