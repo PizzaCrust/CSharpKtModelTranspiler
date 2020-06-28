@@ -45,7 +45,8 @@ val CSharpParser.Class_bodyContext.properties: Map<String, String>
 fun CSharpParser.Class_bodyContext.validProperties(classpath: List<CSharpParser.Class_definitionContext>): Map<String, String> {
     val properties = mutableMapOf<String, String>()
     this.properties.forEach { key, value ->
-        if (cSharpToKotlinTypes.containsStartOfValue(value) || classpath.firstOrNull { value.replace("?", "").replace("List<", "").replace(">","") == (it.name) } != null) {
+        val pureType = value.replace("?", "").replace("List<", "").replace(">","")
+        if (cSharpToKotlinTypes.containsStartOfValue(pureType) || classpath.firstOrNull { pureType == (it.name) } != null) {
             properties[key] = value
         }
     }
