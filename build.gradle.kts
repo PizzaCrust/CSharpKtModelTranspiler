@@ -17,7 +17,7 @@ dependencies {
     implementation(files("csharp-1.0-SNAPSHOT.jar"))
 }
 
-tasks.named("build") {
+tasks.named("install") {
     dependsOn("shadowJar")
 }
 
