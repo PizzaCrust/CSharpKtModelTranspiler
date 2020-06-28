@@ -17,9 +17,15 @@ dependencies {
     implementation(files("csharp-1.0-SNAPSHOT.jar"))
 }
 
-tasks.named("install") {
-    dependsOn("shadowJar")
+tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
+    classifier = null
 }
+
+tasks.withType<Jar> {
+    classifier = "default"
+}
+
+tasks.named("install") { dependsOn("shadowJar") }
 
 tasks {
     compileKotlin {
